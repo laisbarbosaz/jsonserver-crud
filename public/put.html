@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar pessoas cadastradas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Edição</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="post.html" class="">Cadastrar</a>
+      <a href="get.html" class="">Listar</a>
+      <a href="put.html" class="ativo">Editar</a>
+      <a href="delete.html" class="">Excluir</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Buscar pessoa por CPF</h2>
+      <form id="formBusca" class="busca">
+        <div>
+          <label for="buscaCpf">CPF</label>
+          <input type="text" id="buscaCpf" maxlength="14" placeholder="Digite o CPF" required>
+        </div>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+    <div class="card oculto" id="cardEdicao">
+      <h2>Editar pessoa (PUT)</h2>
+      <form id="formulario">
+        <div class="grade" id="campos"></div>
+        <button type="submit">Atualizar</button>
+      </form>
+    </div>
+    <div id="mensagem" class="mensagem"></div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="put/put.js"></script>
+</body>
+</html>

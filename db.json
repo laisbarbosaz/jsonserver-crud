@@ -1,0 +1,32 @@
+{
+  "pessoas": [
+    {
+      "cpf": "51293040284",
+      "nome": "Laís",
+      "sobrenome": "Silva",
+      "email": "laisbarbosa383@gmail.com",
+      "idade": 21,
+      "telefone": "11970666614",
+      "rua": "Rua Benedicto Pereira, 39",
+      "bairro": "Centro",
+      "cidade": "Mogi das Cruzes",
+      "estado": "SP",
+      "rg": "5394543246",
+      "id": 2
+    },
+    {
+      "cpf": "50184729485",
+      "nome": "João",
+      "sobrenome": "Freitas",
+      "email": "joaofrei@gmail.com",
+      "idade": 24,
+      "telefone": "119750394",
+      "rua": "Rua das Flores, 100",
+      "bairro": "Centro",
+      "cidade": "Poá",
+      "estado": "SP",
+      "rg": "548430294",
+      "id": 3
+    }
+  ]
+}

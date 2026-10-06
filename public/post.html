@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar novas pessoas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="post.html" class="ativo">Cadastrar</a>
+      <a href="get.html" class="">Listar</a>
+      <a href="put.html" class="">Editar</a>
+      <a href="delete.html" class="">Excluir</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Cadastrar pessoa</h2>
+      <form id="formulario">
+        <div class="grade" id="campos"></div>
+        <button type="submit">Salvar</button>
+      </form>
+      <div id="mensagem" class="mensagem"></div>
+    </div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="post/post.js"></script>
+</body>
+</html>

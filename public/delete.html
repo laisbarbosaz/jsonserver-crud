@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusão de pessoas cadastradas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Exclusão</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="post.html" class="">Cadastrar</a>
+      <a href="get.html" class="">Listar</a>
+      <a href="put.html" class="">Editar</a>
+      <a href="delete.html" class="ativo">Excluir</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Buscar pessoa por CPF</h2>
+      <form id="formBusca" class="busca">
+        <div>
+          <label for="buscaCpf">CPF</label>
+          <input type="text" id="buscaCpf" maxlength="14" placeholder="Digite o CPF" required>
+        </div>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+    <div class="card oculto" id="cardExclusao">
+      <h2>Excluir pessoa (DELETE)</h2>
+      <p id="dadosPessoa"></p>
+      <button id="btnExcluir" class="perigo">Excluir registro</button>
+    </div>
+    <div id="mensagem" class="mensagem"></div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="delete/delete.js"></script>
+</body>
+</html>

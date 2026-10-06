@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de pessoas cadastradas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Lista</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="post.html" class="">Cadastrar</a>
+      <a href="get.html" class="ativo">Listar</a>
+      <a href="put.html" class="">Editar</a>
+      <a href="delete.html" class="">Excluir</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Buscar por CPF</h2>
+      <form id="formBusca" class="busca">
+        <div>
+          <label for="buscaCpf">CPF</label>
+          <input type="text" id="buscaCpf" maxlength="14" placeholder="Digite o CPF">
+        </div>
+        <button type="submit">Buscar</button>
+        <button type="button" id="limpar" class="cinza">Mostrar todos</button>
+      </form>
+      <div id="mensagem" class="mensagem"></div>
+    </div>
+    <div class="card">
+      <h2>Registros</h2>
+      <div class="tabela-wrap">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>CPF</th><th>Nome</th><th>Sobrenome</th><th>E-mail</th><th>Idade</th><th>Telefone</th><th>Rua</th><th>Bairro</th><th>Cidade</th><th>UF</th><th>RG</th></tr>
+          </thead>
+          <tbody id="tabela"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="get/get.js"></script>
+</body>
+</html>

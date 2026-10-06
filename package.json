@@ -1,0 +1,11 @@
+{
+  "name": "crud-json-server-render",
+  "version": "1.0.0",
+  "description": "CRUD com JSON Server e Express hospedado no Render",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "express": "^4.19.2",
+    "json-server": "0.17.4"
+  }
+}
